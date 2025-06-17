@@ -9,7 +9,7 @@ body{
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     gap: 45px;
     font-family: serif;
     font-size: 20px;
@@ -21,6 +21,10 @@ body{
     text-decoration: none;
     margin-left: 65px;
 }
+.header a:hover{
+    transform: scale(1.2);
+    color: #76ABAE;
+}
 body h2{
     font-family: serif;
 }
@@ -29,19 +33,41 @@ body h2{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 720px;
 }
 .introimg{
-    margin: 100px;
-    height: 500px;
-    margin-left: 175px;
-    margin-right: 60px;
-    border: #EEEEEE solid 15px;
-    border-radius: 500px
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.introimg img{
+    width: 600px;
+    height: 550px;
 }
 .introtxt{
     margin-top: 180px;
-    margin-right: 20px;
-    height: 200px;
+    margin-left: 50px;
+}
+
+@media (max-width: 900px) {
+    .intro {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .introimg {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .introimg img {
+        width: 90vw;
+        height: auto;
+        max-width: 350px;
+    }
+    .introtxt {
+        margin-top: 30px;
+        margin-left: 0;
+        text-align: center;
+    }
 }
 .introtxt h1{
     font-family: serif;
@@ -63,10 +89,21 @@ body h2{
 }
 .about{
     margin-top: px;
-    margin-left: 20px;
+    margin-left: 40px;
     height: 230px;
     word-spacing: auto;
     line-height: 35px;
+}
+@media (max-width: 900px) {
+    .about {
+        margin-left: 0;
+        height: auto;
+        text-align: center;
+        padding: 0 10px;
+    }
+    .about h2{
+        margin-left: -60px;
+    }
 }
 .about h2{
     font-size: 50px;
@@ -77,15 +114,10 @@ body h2{
     flex-direction: row;
     display: flex;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     max-height: 440px;
     height: auto;
     word-spacing: auto;
-}
-.skill h2{
-    font-size: 50px;
-    height: 50px;
-    color: #EEEEEE;
 }
 .skill div{
     margin: 150px;
@@ -96,17 +128,44 @@ body h2{
     font-size: 20px;
     color: #012b3f;
 }
+
+@media (max-width: 900px) {
+    .skill {
+        flex-direction: column;
+        align-items: center;
+        margin-left: -160px;
+        max-height: none;
+    }
+    .skill div {
+        margin: 30px 0;
+        width: 90vw;
+        max-width: 350px;
+        margin-top: 0;
+        margin-left: 250px;
+        text-align: left;
+    }
+}
+
+
 .skill summary{
     font-weight: bold;
     font-size: 20px;
     color: #76ABAE;
+}
+.skill summary:hover{
+    color: #EEEEEE;
+}
+.skill h2{
+    font-size: 50px;
+    height: 50px;
+    color: #EEEEEE;
 }
 .skill ul{
     color: #EEEEEE;
 }
 .certification{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     height: auto;
     font-size: 20px;
     line-height: 40px;
@@ -119,11 +178,11 @@ body h2{
 }
 .certi{
     margin-top: 15px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 .project{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     height: auto;
     font-size: 20px;
     line-height: 40px;
@@ -136,11 +195,11 @@ body h2{
 }
 .proj{
     margin-top: 15px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 .education{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     height: auto;
     font-size: 20px;
     line-height: 40px;
@@ -153,11 +212,11 @@ body h2{
 }
 .educ{
     margin-top: 15px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 .profile{
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     height: auto;
     font-size: 20px;
     line-height: 40px;
@@ -169,16 +228,15 @@ body h2{
     color: #EEEEEE;
 }
 .pro{
-    margin-left: 30px;
+    margin-left: 50px;
 }
 .pro a{
     color: #76ABAE;
     font-size: 20px;
 }
-.contact{
-    
+.contact{  
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
     height: auto;
     font-size: 20px;
     line-height: 40px;
@@ -191,7 +249,7 @@ body h2{
     color: #EEEEEE;
 }
 .contact p{
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 15px;
     color: #76ABAE;
     line-height: 15px;
