@@ -228,6 +228,9 @@ body h2{
     margin-top: 15px;
     margin-left: 50px;
 }
+.project li{
+    font-family: 20px;
+}
 .education{
     margin-top: 10px;
     margin-left: 40px;
@@ -244,6 +247,9 @@ body h2{
 .educ{
     margin-top: 15px;
     margin-left: 50px;
+}
+.education li{
+    font-family: 20px;
 }
 .profile{
     margin-top: 10px;
