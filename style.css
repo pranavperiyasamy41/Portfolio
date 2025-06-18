@@ -74,7 +74,7 @@ body h2{
     color: #76ABAE;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1350px) {
     .intro {
         flex-direction: column;
         align-items: center;
