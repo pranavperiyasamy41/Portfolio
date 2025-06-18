@@ -25,6 +25,11 @@ body{
     transform: scale(1.2);
     color: #76ABAE;
 }
+@media (max-width: 900px) {
+    .header {
+        display: none;
+    }
+}
 body h2{
     font-family: serif;
 }
